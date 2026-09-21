@@ -40,6 +40,6 @@ Memulai Membuat projek baru
 - Asal Sekolah
 - Rencana Menggapai cita cita
 konfirmasi keberhasilan:
-![alt text](image-5.png)
+![alt text](image-6.png)
 
 

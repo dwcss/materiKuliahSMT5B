@@ -22,9 +22,18 @@ export default function App() {
           <Text style={styles.value}>MAN Purwakarta</Text>
         </View>
 
+        {/* Bagian Cita-cita (Singkat) */}
         <View style={styles.infoRow}>
-          <Text style={styles.label}>Rencana Cita-cita:</Text>
-          <Text style={styles.value}>Jadi programmer handal 🚀</Text>
+          <Text style={styles.label}>Cita-cita:</Text>
+          <Text style={styles.value}>Programmer Handal 🚀</Text>
+        </View>
+
+        {/* Bagian Rencana (Paragraf Panjang) */}
+        <View style={[styles.infoRow, styles.lastRow]}>
+          <Text style={styles.label}>Rencana cita-cita:</Text>
+          <Text style={styles.paragraph}>
+            Untuk mencapai cita-cita tersebut, saya berencana untuk mendalami berbagai bahasa pemrograman dan teknologi modern, khususnya di bidang Full-stack Development. Saya akan fokus membangun fondasi coding yang kuat, memperbanyak latihan dengan membuat proyek-proyek nyata (portofolio), dan aktif berkontribusi di komunitas developer. Saya juga akan terus belajar beradaptasi dengan teknologi terbaru seperti AI agar bisa menciptakan solusi digital yang bermanfaat bagi masyarakat luas. 💻✨
+          </Text>
         </View>
       </View>
       
@@ -36,7 +45,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5F7FA', // Warna background yang lebih lembut
+    backgroundColor: '#F5F7FA', 
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
@@ -46,12 +55,10 @@ const styles = StyleSheet.create({
     width: '100%',
     padding: 25,
     borderRadius: 16,
-    // Efek bayangan untuk iOS
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.1,
     shadowRadius: 6,
-    // Efek bayangan untuk Android
     elevation: 5,
   },
   header: {
@@ -67,6 +74,11 @@ const styles = StyleSheet.create({
     borderBottomColor: '#F0F0F0',
     paddingBottom: 8,
   },
+  lastRow: {
+    borderBottomWidth: 0, 
+    marginBottom: 0,
+    paddingBottom: 0,
+  },
   label: {
     fontSize: 12,
     color: '#7F8C8D',
@@ -77,5 +89,13 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '600',
     color: '#34495E',
+  },
+  paragraph: {
+    fontSize: 14,
+    fontWeight: '500',
+    color: '#34495E',
+    lineHeight: 22, 
+    textAlign: 'justify',
+    marginTop: 4,
   },
 });

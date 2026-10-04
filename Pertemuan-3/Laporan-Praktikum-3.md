@@ -22,6 +22,7 @@ Langkah 4 : State Management dengan useState
 Konsep: useState menyimpan data yang bisa berubah. Setiap perubahan state akan men-trigger re-render komponen.
 
 Tambahkan state di dalam fungsi App():
+![alt text](image-9.png)
 
 ![alt text](langkah_04_emulator.png)
 
@@ -34,6 +35,8 @@ StatusBar → mengatur tampilan bar di bagian atas perangkat
 View + Switch → membangun header bar
 
 Ganti bagian return (...) di App():
+![alt text](image-10.png)
+
 ![alt text](image-7.png)
 
 
@@ -48,6 +51,8 @@ Text → bisa di-styling dengan style prop seperti CSS
 Ganti <View><Text ...>Step 5</Text></View> dengan:
 
 {/* 4. ScrollView → semua konten CV dibungkus di sini */}
+![alt text](image-11.png)
+
 ![alt text](langkah_06_emulator.png)
 
 
@@ -88,7 +93,7 @@ Konsep: Modal menampilkan konten di atas (overlay) tampilan saat ini. Dikendalik
 Tambahkan setelah penutup </ScrollView> dan sebelum </SafeAreaView>:
 ![alt text](langkah_10_emulator.png)
 
-📝 LANGKAH 11 — StyleSheet (Styling Terpusat)
+LANGKAH 11 — StyleSheet (Styling Terpusat)
 
 Konsep: StyleSheet.create() adalah cara resmi styling di React Native. Mirip CSS tetapi menggunakan JavaScript object dengan properti camelCase.
 
